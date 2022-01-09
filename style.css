@@ -1,71 +1,7 @@
-body {
-	font-family:Arial;
-	color:black
+#form_container {
+    text-align: center;
 }
 
-td {
-	text-align:center;
-	padding-left:10px;
-	padding-right:10px;
-}
-
-select {
-	border-radius:5px;
-	border-style:solid;
-	border-color:grey;
-	border-width:1px;
-	border-width:1px;
-	padding-bottom:3px;
-	padding-top:3px;
-	transition-duration: 0.4s;
-}
-
-select:hover {
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-	background-color:#eeeeee;
-}
-
-option {
-	background:#eeeeee;
-}
-
-input {
-	color:black;
-	background-color:white;
-	border-radius:5px;
-	border-style:solid;
-	border-color:grey;
-	border-width:1px;
-	padding-bottom:5px;
-	padding-top:5px;
-	transition-duration: 0.4s;
-
-}
-input:hover {
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-	background-color:lightgrey;
-	border-color:white;
-}
-p {
-	text-decoration:underline;
-	font-size:150%;
-}
-
-a {
-	text-decoration:none;
-	color:darkred;
-}
-
-a:hover {
-	text-decoration:underline;
-}
-
-a.visited {
-	text-decoration:none;
-	color:darkred;
-}
-#fach td {
-	padding: 10px;
-	background-color:lightgreen;
-	border-radius:5px;
+ul {
+    list-style-type: none;
 }
