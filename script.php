@@ -42,7 +42,7 @@ $gc6 = 0;
 
 #5en und 6en in Listen zählen
 
-for ($i = 0; i < sizeof($kfaecher); $i++) {
+for ($i = 0; $i < sizeof($kfaecher); $i++) {
     if ($kfaecher[$i] == 5) {
         $kc5++;
     }
@@ -51,7 +51,7 @@ for ($i = 0; i < sizeof($kfaecher); $i++) {
     }
 }
 
-for ($i = 0; i < sizeof(); $i++) {
+for ($i = 0; $i < sizeof($list); $i++) {
     if ($list[$i] == 5) {
         $gc5++;
     }
