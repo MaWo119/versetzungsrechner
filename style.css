@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+    margin-top: 0;
 }
 
 #form {
@@ -10,37 +10,37 @@ body {
 }
 
 #Abstand {
-  height: 40px;
+    height: 40px;
 }
 
 h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  background-color: lightgreen;
-  padding: 0;
-  margin: 0;
-  font-family: fantasy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: lightgreen;
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
 }
 
 #Einleitung {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-family: Verdana;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Verdana;
 }
 
 table {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-family: Franklin Gothic;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Franklin Gothic;
 }
 
 td {
-  background-color: lightgreen;
-  width: 250px;
+    background-color: lightgreen;
+    width: 250px;
 }
 
 button {
