@@ -1,7 +1,45 @@
-gi#form_container {
-    text-align: center;
+body {
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
-ul {
-    list-style-type: none;
+#form {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Abstand {
+  height: 40px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: lightgreen;
+  padding: 0;
+  margin: 0;
+  font-family: fantasy;
+}
+
+#Einleitung {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  font-family: Verdana;
+}
+
+table {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Franklin Gothic;
+  background-color: lightgreen;
+}
+
+button {
+    font-family: Verdana;
 }
