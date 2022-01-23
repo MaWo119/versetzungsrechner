@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Versetzungsrechner - Wirtschaft</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Versetzungsrechner - Wirtschaft</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
 
-</head>
-<body>
-	     <h1>Versetzungsrechner - Wirtschaft</h1>
-           <div id="form">
-              <div id="Einleitung">
-              <p>
-                Tragen Sie bitte Ihre Noten in nachfolgenden Felder ein und klicken Sie auf "Auswerten".
-              <p>
-                Sie erhalten im Anschluss eine Benachrichtigung über Ihren Versetzungsstand (bestanden/nicht bestanden) und Ihren Notendurchschnitt.
-              <p>
-                Die Felder "Name" und "Klasse" sind optional.
-              <p>
-                Ich wünsche Ihnen viel Erfolg.
-              </div>
-              <div id="Abstand"></div>
-		              <table>
-                      <tr>
-                        <td>
-                          Deutsch<p>
-                          <input id="n1" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          Englisch<p>
-                          <input id="n2" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          Mathematik<p>
-                          <input id="n3" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          BWL / RW<p>
-                          <input id="n4" type="number" value="1" min="1" max="6"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          Naturwissenschaft<p>
-                          <input id="n5" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          Informationsverarbeitung<p>
-                          <input id="n6" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          2. Fremdsprache<p>
-                          <input id="n7" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          Gemeinschaftskunde<p>
-                          <input id="n8" type="number" value="1" min="1" max="6"/>
-                        </td>
-											<tr>
-											</tr>
-                        <td>
-                          Religion / Ethik<p>
-                          <input id="n9" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          Sport<p>
-                          <input id="n10" type="number" value="1" min="1" max="6"/>
-                        </td>
-                        <td>
-                          Volkswirtschaftslehre<p>
-                          <input id="n11" type="number" value="1" min="1" max="6"/>
-                        </td>
-                    </tr>
-                    </table>
-										<p>
-	                <center>
-	                    <label for="Name">Name</label>
-	                  <p>
-	                    <textarea name="Name" id="Name" placeholder="anonym"></textarea>
-	                  <p>
-	                    <label for="Klasse">Klasse</label>
-	                  <p>
-	                    <textarea name="Klasse" id="Klasse" placeholder="anonym"></textarea>
-	                  <p>
-	                    <button onclick="berechnen()">Auswerten</button>
-	                </center>
-						</form>
-					</div>
-	<div id="BildUnten">
-		<img src="Bilder/Menschen.png" alt="Bild von Menschen - Quelle:https://pixabay.com/de/vectors/party-jubel-menschen-freude-1458869/">
-	<div>
-	</body>
+    </head>
+    <body>
+        <h1>Versetzungsrechner - Wirtschaft</h1>
+        <div id="form">
+            <div id="Einleitung">
+                <p>
+                    Tragen Sie bitte Ihre Noten in nachfolgenden Felder ein und klicken Sie auf "Auswerten".
+                <p>
+                    Sie erhalten im Anschluss eine Benachrichtigung über Ihren Versetzungsstand (bestanden/nicht bestanden) und Ihren Notendurchschnitt.
+                <p>
+                    Die Felder "Name" und "Klasse" sind optional.
+                <p>
+                    Ich wünsche Ihnen viel Erfolg.
+            </div>
+            <div id="Abstand"></div>
+            <table>
+                <tr>
+                    <td>
+                        Deutsch<p>
+                            <input id="n1" type="number" value="1" min="1" max="6"/>
+                    </td>
+                    <td>
+                        Englisch<p>
+                            <input id="n2" type="number" value="1" min="1" max="6"/>
+                    </td>
+                    <td>
+                        Mathematik<p>
+                            <input id="n3" type="number" value="1" min="1" max="6"/>
+                    </td>
+                    <td>
+                        BWL / RW<p>
+                            <input id="n4" type="number" value="1" min="1" max="6"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Naturwissenschaft<p>
+                            <input id="n5" type="number" value="1" min="1" max="6"/>
+                    </td>
+                    <td>
+                        Informationsverarbeitung<p>
+                            <input id="n6" type="number" value="1" min="1" max="6"/>
+                    </td>
+                    <td>
+                        2. Fremdsprache<p>
+                            <input id="n7" type="number" value="1" min="1" max="6"/>
+                    </td>
+                    <td>
+                        Gemeinschaftskunde<p>
+                            <input id="n8" type="number" value="1" min="1" max="6"/>
+                    </td>
+                <tr>
+                </tr>
+                <td>
+                    Religion / Ethik<p>
+                        <input id="n9" type="number" value="1" min="1" max="6"/>
+                </td>
+                <td>
+                    Sport<p>
+                        <input id="n10" type="number" value="1" min="1" max="6"/>
+                </td>
+                <td>
+                    Volkswirtschaftslehre<p>
+                        <input id="n11" type="number" value="1" min="1" max="6"/>
+                </td>
+                </tr>
+            </table>
+            <p>
+            <center>
+                <label for="Name">Name</label>
+                <p>
+                    <textarea name="Name" id="Name" placeholder="anonym"></textarea>
+                <p>
+                    <label for="Klasse">Klasse</label>
+                <p>
+                    <textarea name="Klasse" id="Klasse" placeholder="anonym"></textarea>
+                <p>
+                    <button onclick="berechnen()">Auswerten</button>
+            </center>
+        </form>
+    </div>
+    <div id="BildUnten">
+        <img src="Bilder/Menschen.png" alt="Bild von Menschen - Quelle:https://pixabay.com/de/vectors/party-jubel-menschen-freude-1458869/">
+        <div>
+    </body>
 </html>
