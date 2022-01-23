@@ -8,16 +8,16 @@ $summe = 0;
 
 #Durchschnittsberechung
 
-for ($i = 1; $i <= 13; $i++) {
+for ($i = 1; $i <= 12; $i++) {
     $id = "n" . (string) $i;
     array_push($notenListe, $_POST[$id]);
 }
 
-for ($i = 0; $i <= 12; $i++) {
+for ($i = 0; $i <= 11; $i++) {
     $summe = $summe + $notenListe[$i];
 }
 
-$durchschnitt = round($summe / 13, 2);
+$durchschnitt = round($summe / 12, 2);
 
 #Versetzung berechnen
 
@@ -115,8 +115,6 @@ if (($kc6 > 0) || ($gc6 > 1) || ($kc5 > 1) || (($kc5 > 0) && ($gc5 > 1)) || ($gc
         $bestanden = "nicht versetzt";
     }
 }
-echo $durchschnitt;
-echo $bestanden;
 
 function ausgleichen($l) {
     for ($z = 0; $z < sizeof($l); $z++) {
@@ -170,5 +168,24 @@ function ausgleichen($l) {
         }
     }
 }
+
+#Name und Klasse einlesen
+
+$name = $_POST["Name"];
+$klasse = $_POST["Klasse"];
+
+if ($name == NULL) {
+    $name = "anonym";
+}
+
+if ($klasse == NULL) {
+    $klasse = "anonym";
+}
+
+
+echo $durchschnitt; //float
+echo $bestanden;    //string
+echo $name;         //string
+echo $klasse;       //string
 
 ?>
