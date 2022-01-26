@@ -168,6 +168,7 @@ function ausgleichen($l) {
         }
     }
 }
+
 #Name und Klasse einlesen
 
 $name = $_POST["Name"];
@@ -181,10 +182,23 @@ if ($klasse == NULL) {
     $klasse = "anonym";
 }
 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+ini_set('log_errors', 'On');
+ini_set('error_log', 'php-error-log');
 
-echo $durchschnitt; //float
-echo $bestanden;    //string
-echo $name;         //string
-echo $klasse;       //string
+//Aufbau Datenbankverbindung
+$conn = mysqli_connect('localhost', 'admin', 'peterpeter', 'versetzungsrechner');
+$sql = "INSERT INTO test (id, durchschnitt, bestanden, name, klasse)
+VALUES ('','$durchschnitt','$bestanden','$name','$klasse')";
 
+if ($conn->query($sql) === TRUE) {
+    echo '<div style="text-align: center">';
+    echo "<h2>Ergebnisse</h2>";
+    echo "<p>Dein Notendurchschnitt beträgt " . $durchschnitt . "</p>";
+    echo "<p> Du wirst " . $bestanden . "</p>";
+    echo "</div>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 ?>

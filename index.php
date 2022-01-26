@@ -32,11 +32,39 @@
                         </td>
                     </tr>
                 </table>
+                </br>
+                <p></p>
+                <?php
+                $conn = mysqli_connect('localhost', 'admin', 'peterpeter', 'versetzungsrechner');
+                $abfrage = "SELECT * FROM test ORDER BY test.id DESC LIMIT 10 ";
+                $db_erg = mysqli_query($conn, $abfrage);
+                if (!$db_erg) {
+                    die('Ungültige Abfrage: ' . mysqli_error());
+                }
+                echo "<h2> Letzten 10 Ergebnisse </h2>";
+                echo '<table border="1">';
+                echo '<tr style="font-size: 20px;">';
+                echo "<td>Notendurchschnitt</td>";
+                echo "<td>Versetzung?</td>";
+                echo "<td>Name</td>";
+                echo "<td>Klasse</td>";
+                echo "</tr>";
+                while ($zeile = mysqli_fetch_array($db_erg, MYSQLI_ASSOC)) {
+                    echo "<tr>";
+                    echo "<td>" . $zeile['durchschnitt'] . "</td>";
+                    echo "<td>" . $zeile['bestanden'] . "</td>";
+                    echo "<td>" . $zeile['name'] . "</td>";
+                    echo "<td>" . $zeile['klasse'] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+                mysqli_free_result($db_erg);
+                ?>
             </center>
         </div>
         <p>
         <div id="BildUnten">
             <img src="Bilder/Menschen.png" alt="Bild von Menschen - Quelle:https://pixabay.com/de/vectors/party-jubel-menschen-freude-1458869/">
-        <div>
+            <div>
     </body>
 </html>
