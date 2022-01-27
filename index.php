@@ -45,7 +45,7 @@
                 echo '<table border="1">';
                 echo '<tr style="font-size: 20px;">';
                 echo "<td>Notendurchschnitt</td>";
-                echo "<td>Versetzung?</td>";
+                echo "<td>Versetzung</td>";
                 echo "<td>Name</td>";
                 echo "<td>Klasse</td>";
                 echo "</tr>";
